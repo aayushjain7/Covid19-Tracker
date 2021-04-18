@@ -5,6 +5,7 @@ import InfoBox from './components/InfoBox';
 import Map from './components/Map';
 import Table from './components/Table';
 import { sortData } from './utils/utils';
+import LineGraph from './components/LineGraph';
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -80,6 +81,7 @@ function App() {
           <h3>Live cases by County</h3>
           <Table countries={tableData} />
           <h3>Worldwide cases</h3>
+          <LineGraph />
         </CardContent>
       </Card>
     </div>
